@@ -469,10 +469,11 @@ color: var(--background-color);
     display: flex;
     justify-content: space-between;
     padding-left: 0;
+    margin-top: 16px;
     margin-bottom: 0;
 }
 
-.network-icon:hover{
+.network-icon:hover, .network-icon:active{
     background-color: var(--success-color);
 }
 
