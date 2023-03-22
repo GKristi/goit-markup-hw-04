@@ -27,6 +27,11 @@ body{
     font-weight: 400;
 }
 
+h1,h2,h3,h4,h5,h6,p,a{
+    padding: 0;
+    margin: 0;
+}
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -53,7 +58,10 @@ body{
 .samples-list,
 .team-list,
 .filters-list,
-.projects-list {
+.projects-list,
+.team-icons-list,
+.customers-icons-list,
+.foot-network-list {
     list-style-type: none;
 }
 
@@ -186,14 +194,23 @@ color: var(--headings-color);
 /* Hero Section */
 
 main {
-    background-color: var(--magic-color);
+    background-color: var(--magic-color); 
 }
 
 .hero {
+    max-width: 1440px;
+    max-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 192px;
     padding-bottom: 192px;
-    background-color: var(--headings-color);
     text-align: center;
+    background-color: var(--headings-color);
+    background-image: linear-gradient( to right, rgba(46,
+        47,66, 0.7), rgba( 46,47,66, 0.7)), url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
 }
 
 .hero-title{
@@ -227,6 +244,14 @@ main {
 
 
 /* Features Section */
+.feature-icon{
+   width: 264px;
+   height: 112px;
+   padding: 24px 100px;
+   background-color: var(--background-color);
+   border-radius: 4px;
+}
+
 .features{
     padding-top: 120px;
     padding-bottom: 120px;
@@ -239,6 +264,7 @@ main {
 
 .feature-direction{
     margin: 0;
+    margin-top: 8px;
     color: var(--headings-color);
     font-weight: 500;
     font-size: 20px;
@@ -294,8 +320,8 @@ main {
 }
 
 .team-item-text {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px 16px;
+
 }
 
 .team-name{
@@ -318,13 +344,86 @@ main {
     text-align: center;
 }
 
+.team-icons-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    padding: 0;
+
+}
+
+.team-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-brand-color);align-items: ;
+}
+
+.team-icon:hover,
+.team-icon:focus {
+    background-color: var(--hover-color);
+}
+
+
+/* Customer Section */
+.customers{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.customers-icons-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    margin-top: 72px;
+
+}
+.customers-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 88px;
+    border: 1px solid var(--subtle-text);
+    border-radius: 4px;
+    
+}
+
+.customers-icon{
+    fill: var(--subtle-text);
+}
+
+.customers-icon:hover{
+    fill: var(--hover-color);
+}
+
+.customers-item:hover,
+.customers-item:focus {
+    border: 1px solid var(--hover-color);
+    border-radius: 4px;
+}
+
 /* Footer Section */ 
 
 .footer{
-    padding-top: 120px;
-    padding-bottom: 120px;
     background-color: var(--headings-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
+
+
+.footer-container {
+    display: flex;
+    width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 
 .logo-bottom{
     padding-top: 0;
@@ -338,11 +437,43 @@ color: var(--background-color);
 
 .footer-advise{
     margin-top: 16px;
-    margin-bottom: 0;
     color: var(--magic-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 264px;
+}
+
+.foot-network {
+    width: 208px;
+    margin-left: 120px;
+}
+
+.foot-network-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--magic-color);
+}
+
+.network-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.foot-network-list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.network-icon:hover{
+    background-color: var(--success-color);
 }
 
 
@@ -443,4 +574,5 @@ color: var(--background-color);
     color: var(--text-color);
     
 }
+
 
