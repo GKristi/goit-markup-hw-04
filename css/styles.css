@@ -386,9 +386,8 @@ color: var(--headings-color);
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    margin-top: 72px;
-
 }
+
 .customers-item{
     display: flex;
     justify-content: center;
@@ -593,6 +592,10 @@ color: var(--background-color);
 }
 
 
-.projects-item:hover, .projects-item:focus{
+.project-link:hover, .project-link:focus{
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.project-link:hover, .project-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
