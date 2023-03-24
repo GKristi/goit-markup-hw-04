@@ -554,6 +554,7 @@ color: var(--background-color);
     margin-right: 24px;
     margin-bottom: 48px;
     border: 1px solid var(--accent-color);
+    
 }
 
 .projects-item:nth-child(3n) {
@@ -591,11 +592,11 @@ color: var(--background-color);
     
 }
 
-
 .project-link:hover, .project-link:focus{
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.project-link:hover, .project-link:focus {
+/* .projects-item:hover,
+.projects-item:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
+} */
